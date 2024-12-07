@@ -32,7 +32,6 @@ class TestCalcRating:
 
         return data, rating_scores
 
-
     def test_init_calc_rating(self, input_data:
                               tuple[DataType, RatingsType]) -> None:
         calc_rating = CalcRating(input_data[0])
