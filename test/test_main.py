@@ -1,7 +1,3 @@
-# import sys
-
-# print("\n".join(sys.path))
-
 
 from src.main import get_path_from_arguments
 import pytest
