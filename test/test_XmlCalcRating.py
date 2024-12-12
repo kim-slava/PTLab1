@@ -48,7 +48,8 @@ class TestXmlCalcRating:
 
         return data, good_students_count
 
-    def test_init_xml_calc_rating(self, input_data: tuple[DataType, int]) -> None:
+    def test_init_xml_calc_rating(self,
+                                  input_data: tuple[DataType, int]) -> None:
         calc_rating = XmlCalcRating(input_data[0])
         assert input_data[0] == calc_rating.data
 
