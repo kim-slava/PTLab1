@@ -5,6 +5,7 @@ from src.XmlDataReader import XmlDataReader
 
 RatingsType = dict[str, float]
 
+
 class TestXmlCalcRating:
 
     @pytest.fixture()
@@ -54,6 +55,6 @@ class TestXmlCalcRating:
     def test_calc(self, input_data: tuple[DataType, int]) -> None:
         calc_rating = XmlCalcRating(input_data[0])
         good_students_count = calc_rating.calc()
-        
+
         # Проверяем, что количество хорошистов совпадает с ожидаемым
         assert good_students_count == input_data[1]

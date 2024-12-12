@@ -40,5 +40,4 @@ class XmlDataReader(DataReader):
                 subject_name = subject.tag.strip()
                 score = int(subject.text.strip())
                 self.students[student_name].append((subject_name, score))
-
         return self.students

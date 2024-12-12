@@ -16,9 +16,9 @@ class XmlCalcRating:
             for subject in self.data[key]:
                 score = subject[1]
                 # self.rating[key] += score
-                if score < 76:  
+                if score < 76:
                     is_good_student = False
-            # self.rating[key] /= len(self.data[key]) 
+            # self.rating[key] /= len(self.data[key])
 
             if is_good_student:
                 self.good_students_count += 1  # Увеличиваем счётчик хорошистов

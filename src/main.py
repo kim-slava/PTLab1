@@ -22,7 +22,7 @@ def main():
     students = reader.read(path)
     print("Students: ", students)
     rating = XmlCalcRating(students).calc()
-    print("Rating: ", rating)
+    print("Count: ", rating)
 
 
 if __name__ == "__main__":
